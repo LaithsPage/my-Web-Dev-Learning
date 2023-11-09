@@ -1,0 +1,30 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px; /* Gap between columns */
+}
+
+.column-1, .column-2 {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(0, auto));
+  row-gap: 20px; /* Gap between pictures in each column */
+}
+
+.image-container {
+  width: 500px; /* Set the desired width for "westview 2.jpg" */
+  height: 700px; /* Set the desired height for "westview 2.jpg" */
+  overflow: hidden; /* Clip the image to the specified width and height */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the image while maintaining aspect ratio */
+  max-width: 100%; /* Ensure images don't exceed the width of their container */
+  height: auto; /* Maintain the aspect ratio of the images */
+}
+
+grid-template: 
+            "a a ." minmax(50px, auto)
+            "a a ." 80px
+            "b b c" auto / 2em 3em auto;
