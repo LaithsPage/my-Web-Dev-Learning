@@ -52,7 +52,7 @@ export default function Nav() {
 }
 const links = [
     "Home", "Santa's Bio", "Gallery", 
-    "Learn About Santa", "Book A Visit", "Santa's Schedule"
+    "Learn About Santa", "Book A Visit", "Santa's Schedule", "Facebook"
 ];
 
 /*  {linkName: "Home", id: 1}, 

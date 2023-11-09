@@ -38,23 +38,50 @@ For now, a grid is needed that has 2 columns, within the columns are
 
 export default function MainContent() {
     return (
-        <div className="main-grid">
+        <>
+        <div className="main-wrapper">
             
-            <div className="column-1">
-                <div>
-                <img src="../public/images/easternmarket_composite_05.jpg" alt="not found" />
+            <div className="main-header">
+                Meet Santa Riley
+            </div>
+            
+            <div className="main-grid">
+                <div className="column-1">
+                    <div>
+                        <img src="../public/images/easternmarket_composite_05.jpg" alt="not found" />
+                    </div>
+
+                    <div className="image-container">
+                        <img src="../public/images/westview 2.jpg" alt="#" />
+                    </div>
+                </div>
+
+                <div className="column-2">
+                    <img src="../public/images/rochester_composite_09.jpg" alt="#" />
+                    <img src="../public/images/westview_composite_19.jpg" alt="#" />
+                    <img src="../public/images/easternmarket_composite_05.jpg" alt="#" />
+                </div>
+
+                <div className="column-3">
+                    <img src="../public/images/rochester 1.jpg" alt="#" />
                 </div>
                 
-                <div className="image-container">
-                    <img src="../public/images/westview 2.jpg" alt="#" />
+                <div>
+                    <p>Something about Santa Riley here. Something about Santa Riley here. Something about Santa Riley here. Something about Santa Riley here. </p>
+                    <a href="#">Santa Link here </a>
+                </div>
+
+                <div className="column-4">
+                    <img src="../public/images/rochester 1.jpg" alt="#" />
+                    <h3>Headline Text</h3>
+                    <p>Follow up info</p>
+                    <form>
+                    <label for="fname">First name:</label><br />
+                    <input type="text" id="fname" name="fname" /><br />
+                    </form>
                 </div>
             </div>
-
-            <div className="column-2">
-                <img src="../public/images/rochester_composite_09.jpg" alt="#" />
-                <img src="../public/images/westview_composite_19.jpg" alt="#" /> 
-                <img src="../public/images/easternmarket_composite_05.jpg" alt="#" />
-            </div>
         </div>
+        </>
     );
 }
