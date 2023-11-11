@@ -14,7 +14,10 @@ Some header text, then some nav links (can the nav be reused here?), then some c
 
 */
 import Nav from './nav.jsx'
-
+const links = [
+    "Home", "Santa's Bio", "Gallery", 
+    "Learn About Santa", "Book A Visit", "Santa's Schedule", "Facebook"
+  ];
 
 export default function Footer() {
     return (
@@ -26,7 +29,7 @@ export default function Footer() {
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
-                <Nav />
+                <Nav links={links}/>
                 <p>Copyright&copy; Laith and Santa Riley</p>
             </footer>
         </div>
