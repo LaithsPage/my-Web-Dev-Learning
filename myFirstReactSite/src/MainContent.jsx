@@ -35,6 +35,17 @@ Or maybe the positons and the images can chaange.
 For now, a grid is needed that has 2 columns, within the columns are 
 
 */
+// can break array up into one array for each column so it is easier to differentiate between and change later
+const imagePaths = [
+    { id: 'img1', path: '../public/images/easternmarket_composite_05.jpg' },
+    { id: 'img2', path: '../public/images/westview_composite_07.jpg' },
+    // { id: 'img2', path: '../public/images/westview 2.jpg' },
+    { id: 'img3', path: '../public/images/rochester_composite_09.jpg' },
+    { id: 'img4', path: '../public/images/westview_composite_19.jpg' },
+    { id: 'img5', path: '../public/images/easternmarket_composite_05.jpg' },
+    { id: 'img6', path: '../public/images/rochester 1.jpg' },
+    { id: 'img7', path: '../public/images/rochester 1.jpg' },
+  ];
 
 export default function MainContent() {
     return (
@@ -48,22 +59,22 @@ export default function MainContent() {
             <div className="main-grid">
                 <div className="column-1">
                     <div>
-                        <img src="../public/images/easternmarket_composite_05.jpg" alt="not found" />
-                    </div>
-
-                    <div className="image-container">
-                        <img src="../public/images/westview 2.jpg" alt="#" />
+                        {imagePaths.slice(0, 2).map(({id, path}) => (
+                            <div key={id}>
+                                <img src={path} alt={`Image ${id}`} />
+                            </div>
+                        ))}
                     </div>
                 </div>
 
                 <div className="column-2">
-                    <img src="../public/images/rochester_composite_09.jpg" alt="#" />
-                    <img src="../public/images/westview_composite_19.jpg" alt="#" />
-                    <img src="../public/images/easternmarket_composite_05.jpg" alt="#" />
+                    {imagePaths.slice(2, 5).map(({ id, path }) => (
+                        <img key={id} src={path} alt={`Image ${id}`} />
+                    ))}
                 </div>
 
                 <div className="column-3">
-                    <img src="../public/images/rochester 1.jpg" alt="#" />
+                    <img src={imagePaths[5].path} alt={`Image ${imagePaths[5].id}`} />
                 </div>
                 
                 <div>
@@ -72,12 +83,12 @@ export default function MainContent() {
                 </div>
 
                 <div className="column-4">
-                    <img src="../public/images/rochester 1.jpg" alt="#" />
+                    <img src={imagePaths[6].path} alt={`Image ${imagePaths[6].id}`} />
                     <h3>Headline Text</h3>
                     <p>Follow up info</p>
                     <form>
-                    <label for="fname">First name:</label><br />
-                    <input type="text" id="fname" name="fname" /><br />
+                        <label for="fname">First name:</label><br />
+                        <input type="text" id="fname" name="fname" /><br />
                     </form>
                 </div>
             </div>

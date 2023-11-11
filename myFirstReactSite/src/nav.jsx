@@ -54,10 +54,3 @@ const links = [
     "Home", "Santa's Bio", "Gallery", 
     "Learn About Santa", "Book A Visit", "Santa's Schedule", "Facebook"
 ];
-
-/*  {linkName: "Home", id: 1}, 
-    {linkName: "Santa's Bio", id: 1}, 
-    {linkName: "Gallery", id: 1}, 
-    {linkName: "Learn About Santa", id: 1}, 
-    {linkName: "Book A Visit", id: 1}, 
-    {linkName: "Santa's Schedule", id: 1},  */
