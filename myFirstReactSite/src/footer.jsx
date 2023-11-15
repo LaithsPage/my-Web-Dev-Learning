@@ -15,9 +15,16 @@ Some header text, then some nav links (can the nav be reused here?), then some c
 */
 import Nav from './nav.jsx'
 const links = [
-    "Home", "Santa's Bio", "Gallery", 
-    "Learn About Santa", "Book A Visit", "Santa's Schedule", "Facebook"
-  ];
+  
+    {link: 'index.html', text: "Home"},
+    {link: 'index.html', text: "Santa's Bio"},
+    {link: 'index.html', text: "Gallery"},
+    {link: 'index.html', text: "Learn About Santa"},
+    {link: 'index.html', text: "Book A Visit"},
+    {link: 'index.html', text: "Santa's Schedule"},
+    {link: 'index.html', text: "Facebook"},
+    
+  ]
 
 export default function Footer() {
     return (
