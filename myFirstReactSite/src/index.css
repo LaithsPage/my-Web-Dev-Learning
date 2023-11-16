@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
 a {
@@ -66,14 +67,6 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
- nav {
-  background-color: cadetblue;
- }
-
-.nav-bar > ul {
-  list-style: none;
 }
 
 .main-grid {

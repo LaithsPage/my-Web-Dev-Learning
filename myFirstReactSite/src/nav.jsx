@@ -21,6 +21,7 @@ div
  */
 
 /* function creates the links for the nav bar */
+import './nav.css'
 function ListOfLinks({arrayOfLinks}) {
 
     function handleMouseOver() {
@@ -28,9 +29,9 @@ function ListOfLinks({arrayOfLinks}) {
     }
     
     return (
-        <ul>
+        <ul className="nav-list">
             {arrayOfLinks.map(({link, text, id}) => (
-            <li key={id}><a href={link} onMouseOver={handleMouseOver}>{text}</a>
+            <li key={id}><a href={link} /* onMouseOver={handleMouseOver} */>{text}</a>
             </li>
             ))}
         </ul>
@@ -39,7 +40,7 @@ function ListOfLinks({arrayOfLinks}) {
 
 function Logo() {
     return (
-        <div>Put Logo here</div>
+        <div className="logo">Santa Riley</div>
     )
 }
 

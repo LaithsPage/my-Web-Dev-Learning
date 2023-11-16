@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import Nav from './nav.jsx'
 import MainContent from './MainContent.jsx'
 import Footer from './footer.jsx'
 import './index.css'
-import './nav.css'
 
 /* const links = [
   "index.html", "Santa's Bio", "Gallery", 
